@@ -7,11 +7,14 @@ public class PlayerController : MonoBehaviour
     public InputController inputController;
     public float moveSpeed = 3f;
     public GameObject player;
+    private Rigidbody2D playerRB;
 
     // Use this for initialization
     void Start()
     {
+        playerRB = player.GetComponent<Rigidbody2D>();
     }
+
 
     // Update is called once per frame
     void Update()
@@ -27,6 +30,10 @@ public class PlayerController : MonoBehaviour
         {
             player.transform.position =
                 new Vector3(cameraPosition.x + updateMoveSpeed, cameraPosition.y, cameraPosition.z);
+        }
+        if (inputController.GetKeyDown(InputController.Key.JUMP))
+        {
+//            playerRB.
         }
     }
 }
