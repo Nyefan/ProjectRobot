@@ -641,5 +641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bd7ebf7b2fe94c689b46d9cc8b12689, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 223082474}
-  inputController: {fileID: 1930287174}
+  mainCamera: {fileID: 223082479}
+  inputController: {fileID: 1930287176}
+  moveSpeed: 3
+  player: {fileID: 1571637162}
